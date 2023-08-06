@@ -1,0 +1,178 @@
+body {
+    background-color: #181818;
+
+}
+.card {
+ --background: linear-gradient(to left, #595650 30%, rgb(142, 143, 144) 70%);
+ width: 150px;
+ height: 254px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: #e8d7af;
+ background: var(--background);
+ position: relative;
+ z-index: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #181818;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: small;
+}
+
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ --color: #181818;
+ background: var(--color);
+ color: var(--color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: .7rem;
+}
+
+.card {
+ font-weight:normal;
+ letter-spacing: .1em;
+}
+
+#title {
+  background-color: #333; /* Dark background color */
+  color: #ddd; /* Light text color */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+  text-shadow: 1px 1px 2px #888; /* Slight text shadow */
+  position: relative; /* Add position relative */
+}
+
+#title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #999 0%, #666 100%); /* Gradient background */
+  opacity: 0.3; /* Adjust the opacity as desired */
+  border-radius: 5px; /* Match the border-radius of #title */
+}
+
+
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+}
+
+.card:hover .card-info {
+ color: #f7ba2b;
+ transition: color 1s;
+}
+
+img {
+ display: flex;
+ justify-content:center;  
+ align-items: center;
+}
+
+img:hover::after {
+    opacity: 0;
+}
+
+a:visited {
+  color: rgb(50, 71, 147);
+}
+
+a:hover {
+    color: rgb(66, 89, 122);
+}
+
+a:active {
+    color: yellow;
+  }
+
+  /* Default styles for all screen sizes */
+.full-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .card-info {
+    text-align: center;
+  }
+  
+  .card {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    /* Adjust font size and layout for smaller screens */
+   .card {
+      font-size: 1.5rem;
+    }
+  
+    /* Adjust image size for smaller screens */
+   .card img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Adjust font size and layout for even smaller screens */
+   .card {
+      font-size: 1rem;
+    }
+  
+    /* Adjust image size for even smaller screens */
+   .card img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+
+  .card {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #333;
+    color: #fff;
+  }

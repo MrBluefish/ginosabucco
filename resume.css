@@ -1,0 +1,151 @@
+body {
+    background-color: dar;
+}
+.radial-gradient {
+    background-image: radial-gradient(
+      farthest-corner at 100%,
+      rgb(117, 117, 117) 10%,
+        rgb(215, 215, 215)    );
+  }  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b6b63;
+    padding: 10px;
+}  
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cvpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 48%;
+    max-width: 100%;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #49493e);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.contact, .social {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-bottom: 25px;
+    margin-right: 175px;
+    margin-left: 10px;
+}
+.email {
+    color: rgb(50, 71, 147);
+    margin-right: 3px;
+}
+.social {
+    color: rgb(50, 71, 147);
+    margin-left: 3px;
+    margin-right: 12px;
+    text-shadow: 4px;
+}
+.summary {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 190px;
+    margin-right: 200px;
+    padding: 5px;
+}
+ul {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 190px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+a:visited {
+    color: rgb(50, 71, 147);
+  }
+  
+  a:hover {
+      color: rgb(66, 89, 122);
+  }
+  
+  a:active {
+      color: yellow;
+    }
+
+.email:visited {
+    color: rgb(50, 71, 147);
+}
+      
+.email:hover {
+    color: rgb(66, 89, 122);
+}
+      
+.email:active {
+    color: yellow;
+}
+
+.social :visited {
+    color: rgb(50, 71, 147);
+}
+          
+.social :hover {
+    color: rgb(66, 89, 122);
+}
+          
+.social :active {
+    color: yellow;
+}        
+
+.skills ul li:hover {
+    background-color: #f2f2f2;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: #fff;
+  }
+
+  .summary {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
